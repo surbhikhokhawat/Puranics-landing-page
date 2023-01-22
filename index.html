@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Puranics</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body class="font-brand scroll-smooth">
+  <!-- Navbar -->
+  <header class="w-full flex items-center justify-center bg-white py-4 sticky left-0 top-0 z-40">
+    <div class="w-11/12 lg:w-10/12 grid grid-cols-2 lg:flex items-center justify-between">
+      <div>
+        <img src="./static/Puranics Abitante.jpg" class="h-16" alt="logo" />
+      </div>
+      <div class="flex items-center justify-end">
+        <button type="button"
+          class="flex items-center p-2 text-sm text-gray-300 lg:hidden focus:outline-none focus:ring-2 focus:ring-gray-200"
+          onclick="handleToggleNavbarModel()">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </button>
+      </div>
+      <nav id="navbar-items"
+        class="text-black lg:flex flex-col lg:flex-row items-center justify-end space-x-5 text-md hidden">
+        <a onclick="handleToggleNavbar(true)" href="#Overview">Overview</a>
+        <a onclick="handleToggleNavbar(true)" href="#Project-Highlights">Project Highlights</a>
+        <a onclick="handleToggleNavbar(true)" href="#Location-Insights">Location Insights</a>
+        <a onclick="handleToggleNavbar(true)" href="#Pricing">Pricing</a>
+        <a onclick="handleToggleNavbar(true)" href="#amenities">Amenities</a>
+        <button onclick="handleToggleNavbar(true); handleToggleModel();"
+          class="bg-black text-white px-5 py-2 font-semibold animate-btn">
+          Enquire Now
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Banner Image -->
+  <section>
+    <div class="owl-carousel">
+      <img src="./static/banner-1.jpeg" alt="home banner" class="w-full" />
+      <img src="./static/banner-2.jpeg" alt="home banner" class="w-full" />
+      <img src="./static/banner-3.jpeg" alt="home banner" class="w-full" />
+    </div>
+    <div class="owl-dots flex items-center justify-center py-2"></div>
+  </section>
+
+  <!-- Puranics Abitante - Overview Section -->
+  <section id="Overview" class="bg-brand-gray text-black w-full py-10">
+    <div class="w-10/12 mx-auto flex flex-col items-center justify-center">
+      <h2 class="text-center text-2xl font-bold mb-2">Puranics Abitante Overview</h2>
+      <hr class="w-20 mb-10 bg-black border-none h-0.5" />
+
+      <p class="text-justify leading-7 text-white-600 mb-5">
+        Fulfill your desire to live amidst nature's bounty. Breath in the fresh air and let your eyes roam across
+        picturesque greenery, that rekindles our love for life every day. Keeping this in mind, Puranics Abitante is
+        developing 2 & 3 BHK flats in Pune's super connected locality, Bavdhan. These homes will be carefully designed
+        for you to experience nature to the fullest. Thoughtfully planned unique green amenities will bring you closer
+        to nature and keep you connected to the things you love. Come home to freshness, come home to Puraniks Abitante
+        Fiore.
+      </p>
+      <button onclick="handleToggleModel()" class="bg-black text-white px-4 py-2 font-semibold animate-btn">
+        Request For Brochure
+      </button>
+    </div>
+  </section>
+
+  <!-- Project Highlights Section -->
+  <section id="Project-Highlights" class="bg-brand-dark text-white w-full py-10">
+    <div class="w-10/12 mx-auto flex flex-col items-center justify-center">
+      <h2 class="text-center text-2xl font-bold mb-2">2 & 3 BHK Italian Themed Homes at Bavdhan Budruk, Pune</h2>
+      <hr class="w-20 mb-10 bg-white border-none h-0.5" />
+
+      <div class="w-full md:w-8/12 grid grid-cols-1 md:grid-cols-2 items-start gap-5 mb-5">
+        <ul class="list-disc flex flex-col space-y-4">
+          <li>Strategically located within the reach of IT Parks in bavdhan & hills nearby. 1500+ families chose
+            Puraniks Abitante as their home in West Pune.</li>
+          <li>It is the largest residential & commercial development in West Pune locating spot on will make you reach
+            Baner, Balewadi High Street, Wakad & Hinjewadi in 30 mins.</li>
+          <li>Close proximity to Mumpai - Pune highway, 5 mins from Pashan, 10 mins from Kothrud, 5 mins from Chandni
+            Chowk.</li>
+        </ul>
+
+        <ul class="list-disc flex flex-col space-y-4">
+          <li>Clusters within Puraniks Abitante have a definite edge over other projects for 5 major reasons, Close to
+            nature, Ample open space, Upgraded specifications, Superior quality construction & Excellent location.</li>
+          <li>Crimson Anisha Global School</li>
+          <li>A home in Puraniks Abitante gives you beautiful natural vistas & great natural ventilation & sunlight
+            overlooking hills & Urban living on either side of the Project.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Aros R 13 New Launch Section -->
+  <!-- <section class="bg-brand-dark text-white w-full py-10">
+    <div class="w-10/12 mx-auto flex flex-col items-center justify-center">
+      <h2 class="text-center text-2xl font-bold mb-2">
+        Aros R 13 New Launch
+      </h2>
+      <hr class="w-20 mb-10 bg-white border-none h-0.5" />
+
+      <p class="text-justify leading-7 mb-5">
+        The New launch Aros with a thoughtfully crafted combination of 2 & 3
+        BHK Flats aims at providing extra ordinary living with a world of
+        privileges in different ways be it mesmerizing nature’s nest, a 3
+        level club house or an extensive sky trail. Result is an Extra
+        Ordinary Living!
+      </p>
+    </div>
+  </section> -->
+
+
+
+  <!-- Pricing Section -->
+  <section id="Pricing" class="bg-brand-gray text-black w-full py-10">
+    <div class="w-10/12 mx-auto flex flex-col items-center justify-center">
+      <h2 class="text-center text-2xl font-bold mb-2">Pricing</h2>
+      <hr class="w-20 mb-10 bg-black border-none h-0.5" />
+
+      <div class="w-full md:w-8/12 mx-auto flex flex-col gap-5 divide-y-2 divide-black">
+        <div class="w-full grid grid-cols-2 font-bold text-xl divide-x-2 divide-black">
+          <span>Configuration</span>
+          <span class="text-center">Price</span>
+        </div>
+        <div class="w-full grid grid-cols-2 text-md pb-2 pt-5 divide-x-2 divide-black">
+          <span>2 BHK</span>
+          <div class="flex items-center justify-center">
+            <button onclick="handleToggleModel()" class="bg-black text-white px-5 py-2 font-semibold animate-btn">
+              Know More
+            </button>
+          </div>
+        </div>
+        <div class="w-full grid grid-cols-2 text-md pb-2 pt-5 divide-x-2 divide-black">
+          <span>3 BHK</span>
+          <div class="flex items-center justify-center">
+            <button onclick="handleToggleModel()" class="bg-black text-white px-5 py-2 font-semibold animate-btn">
+              Know More
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Amenities Section -->
+  <section class="bg-brand-dark text-white w-full py-10" id="amenities">
+    <div class="w-10/12 mx-auto flex flex-col items-center justify-center">
+      <h2 class="text-center text-2xl font-bold mb-2">Amenities</h2>
+      <hr class="w-20 mb-10 bg-white border-none h-0.5" />
+
+      <div class="w-full md:w-10/12 grid grid-cols-1 md:grid-cols-2 items-start gap-5 mb-5">
+        <ul class="list-disc flex flex-col space-y-4 mt-2">
+          <li>Club House</li>
+          <li>Swimming Pool</li>
+          <li>Senior Citizen Sitout</li>
+          <li>Gymnasium</li>
+          <li>Indoor Games</li>
+          <li>Multipurpose Hall</li>
+          <li>Jogging Track</li>
+          <li>Pool Table</li>
+          <li>Cycling</li>
+          <li>Badminton</li>
+          <li>Children Play Area</li>
+          <li>Barbeque Pit</li>
+        </ul>
+
+        <div>
+          <div>
+            <div class="owl-carousel">
+              <img src="./static/amenities-1.png" alt="amenities" class="w-full" />
+              <img src="./static/amenities-2.png" alt="amenities" class="w-full" />
+              <img src="./static/amenities-3.png" alt="amenities" class="w-full" />
+              <img src="./static/amenities-4.png" alt="amenities" class="w-full" />
+              <img src="./static/amenities-5.png" alt="amenities" class="w-full" />
+              <img src="./static/amenities-6.png" alt="amenities" class="w-full" />
+              <img src="./static/amenities-7.png" alt="amenities" class="w-full" />
+              <img src="./static/amenities-8.png" alt="amenities" class="w-full" />
+              <img src="./static/amenities-9.png" alt="amenities" class="w-full" />
+              <img src="./static/amenities-10.png" alt="amenities" class="w-full" />
+
+            </div>
+            <div class="owl-dots flex items-center justify-center py-2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Address Section -->
+  <section class="bg-brand-gray text-black w-full py-10">
+    <div class="w-10/12 mx-auto grid grid-cols-1 md:grid-cols-2 md:gap-10">
+      <div class="flex flex-col items-center justify-center h-full text-center">
+        <h2 class="text-center text-2xl font-bold mb-2">
+          Location Highlights
+        </h2>
+        <hr class="w-20 mb-10 bg-black border-none h-0.5" />
+
+        <ul class="list-disc text-left flex flex-col space-y-10 mt-4">
+          <li>Well Connected to Pune Mumbai Expressway</li>
+          <li>Multiple Connectivity's from Rajiv Gandhi IT Park & PCMC</li>
+          <li>Upcoming Pune Metro Connecting Hinjewadi to Shivaji Nagar</li>
+          <li>
+            Upcoming Mahalunge - Hinjewadi IT PARK Bridge on Mula River
+            Connecting Baner & Balewadi
+          </li>
+          <li>Upcoming 110m Wide Ring Road to Link PMC to Major Highways</li>
+        </ul>
+      </div>
+
+      <div>
+        <img src="./static/map.png" alt="Location Map" class="h-[30rem] object-contain" />
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Footer -->
+  <footer class="w-full bg-brand-dark text-white font-sans">
+    <div class="w-11/12 mg:w-9/10 lg:w-10/12 mx-auto flex flex-col md:flex-row md:gap-20 gap-10 py-10">
+      <div class="w-full md:w-5/12">
+        <h5 class="mb-5 text-center font-bold text-lg">
+          A STEP AHEAD. ASK TO OWN.
+        </h5>
+        <form class="flex flex-col space-y-5 mb-5 bg-gray-200 text-black p-5 md:p-10 rounded-xl">
+          <input placeholder="First Name" type="text" name="first_name"
+            class="py-2 px-2 placeholder:text-black/50 placeholder:font-semibold font-semibold text-black" />
+          <input placeholder="Phone" type="text" name="phone"
+            class="py-2 px-2 placeholder:text-black/50 placeholder:font-semibold font-semibold text-black" />
+          <input placeholder="Email" type="email" name="email"
+            class="py-2 px-2 placeholder:text-black/50 placeholder:font-semibold font-semibold text-black" />
+          <select placeholder="Configuration" name="configuration"
+            class="py-2 px-2 placeholder:text-black/50 placeholder:font-semibold font-semibold text-black/50">
+            <option value="">Configuration Looking For</option>
+            <option value="2bhk">2 BHK</option>
+            <option value="3bhk">3 BHK</option>
+          </select>
+
+          <select placeholder="Site Visit Availablity" name="site_visit_availablity"
+            class="py-2 px-2 placeholder:text-black/50 placeholder:font-semibold font-semibold text-black/50">
+            <option value="">Site Visit Availablity?</option>
+            <option value="2bhk">Weekends</option>
+            <option value="3bhk">Weekdays</option>
+          </select>
+
+          <div>
+            <input type="checkbox" name="agree_to_contact" id="agree_to_contact" />
+            <label for="agree_to_contact">I agreed to be contacted on Whatsapp</label>
+          </div>
+
+          <button type="submit" class="bg-black text-white px-5 py-2 font-semibold animate-btn">
+            Submit
+          </button>
+        </form>
+      </div>
+
+      <div class="flex flex-col gap-5 text-center justify-center md:text-left w-full md:w-6/12 md:pl-20">
+        <div class="h-20 flex text-center justify-center items-center md:justify-start w-full">
+          <img src="./static/Puranics Abitante.jpg" class="h-20 bg-white p-2" alt="logo" />
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10">
+          <div>
+            <p class="mb-5">
+              Puranik Builders Limited is a leading real estate company providing comprehensive residential
+              and commercial solutions across various categories.
+            </p>
+            <p class="font-bold">CONTACT US</p>
+            <p class="mb-5">
+              Uttam Nagar, Bavdhan, Pune,
+              Maharashtra 411021 </p>
+            <p class="font-bold">CALL US</p>
+            <p class="mb-5">8055544000</p>
+          </div>
+          <div>
+            <p class="font-bold mb-3">QUICK LINKS</p>
+            <ul class="flex flex-col space-y-2">
+              <li class="before:content-['>'] before:pr-1">
+                2 Bhk Flats
+              </li>
+              <li class="before:content-['>'] before:pr-1">
+                Projects in Hinjewadi
+              </li>
+              <li class="before:content-['>'] before:pr-1.5">
+                3 Bhk Flats
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-full bg-black flex items-center justify-center text-center text-white py-1">
+      <small>
+        Copyright @2022. All Rights Reserved. Designed by Pinaka Digital
+        Technologies
+      </small>
+    </div>
+  </footer>
+
+
+  <!-- ----- button-fixed----  -->
+  <div class="h-20 items-stretch flex flex-row sticky bottom-0 left-0 right-0 bg-brand-dark text-lg md:hidden">
+    <button
+      class="w-full flex items-center gap-3 justify-center text-center flex-col p-4 text-sm bg-brand-dark text-gray-300 lg:hidden focus:outline-none focus:ring-2 focus:ring-gray-200"
+      onclick="handleToggleModel()">
+      <i class="fa fa-th-large"></i>
+      <span>Enquire Now</span>
+    </button>
+    <div class="h-full w-3 bg-white"></div>
+    <a href="tel:+91-79068 31859"
+      class="gap-3 w-full flex items-center justify-center text-center flex-col p-4 text-sm bg-brand-dark text-gray-300 lg:hidden focus:outline-none focus:ring-2 focus:ring-gray-200">
+      <i class="fa-solid fa-phone"></i>
+      <span>Call Now</span>
+    </a>
+  </div>
+
+
+  <!-- Floating Button -->
+  <button onclick="handleToggleModel()"
+    class="fixed -right-16 bottom-32 rotate-90 bg-brand-dark py-2 px-3 hidden md:block text-white animate-btn z-40">
+    Schedule a Site Visit
+  </button>
+
+  <!-- Model -->
+  <div id="model" class="fixed inset-0 bg-black/50 z-50 flex items-center justify-center font-sans hidden">
+    <div
+      class="[max-height:calc(100vh)] h-full w-full md:h-auto md:w-auto bg-white p-10 relative grid grid-cols-1 md:grid-cols-2 gap-10 overflow-y-auto">
+      <button onclick="handleToggleModel(true)"
+        class="absolute flex items-center justify-center w-10 h-10 top-2 right-2 bg-white rounded-full p-3 shadow-lg">
+        x
+      </button>
+      <div>
+        <h4 class="font-bold text-xl text-center mb-3">Get In Touch</h4>
+        <form class="flex flex-col space-y-5 text-black">
+          <input placeholder="First Name" type="text" name="first_name"
+            class="py-2 px-2 placeholder:text-black/50 border rounded-lg placeholder:font-semibold font-semibold text-black" />
+          <input placeholder="Phone" type="text" name="phone"
+            class="py-2 px-2 placeholder:text-black/50 border rounded-lg placeholder:font-semibold font-semibold text-black" />
+          <input placeholder="Email" type="email" name="email"
+            class="py-2 px-2 placeholder:text-black/50 border rounded-lg placeholder:font-semibold font-semibold text-black" />
+          <select placeholder="Configuration" name="configuration"
+            class="py-2 px-2 placeholder:text-black/50 border rounded-lg placeholder:font-semibold font-semibold text-black/50">
+            <option value="">Select Project</option>
+            <option value="Sayama">Puraniks Sayama</option>
+            <option value="Tokyo-Bay">Puraniks Tokyo Bay</option>
+            <option value="Aldea-Espanola">Puraniks Aldea Espanola</option>
+            <option value="Capitol">Puraniks Capitol</option>
+            <option value="hometown">Puraniks Hometown</option>
+            <option value="grand-central">Puraniks Grand Central</option>
+            <option value="omega-royale">Puraniks Omega Royale</option>
+            <option value="unicorn">Puraniks Unicorn</option>
+          </select>
+
+          <select placeholder="Site Visit Availablity" name="site_visit_availablity"
+            class="py-2 px-2 placeholder:text-black/50 border rounded-lg placeholder:font-semibold font-semibold text-black/50">
+            <option value="">Site Visit Availablity?</option>
+            <option value="2bhk">Weekends</option>
+            <option value="3bhk">Weekdays</option>
+          </select>
+
+          <div>
+            <input type="checkbox" name="agree_to_contact" id="agree_to_contact" />
+            <label for="agree_to_contact">I agreed to be contacted on Whatsapp</label>
+          </div>
+
+          <button type="submit" class="bg-black text-white px-5 py-2 font-semibold animate-btn">
+            Submit
+          </button>
+        </form>
+      </div>
+
+      <div>
+        <h4 class="font-bold text-xl text-left mb-3">Address</h4>
+        <p class="font-bold">Puranics Abitante</p>
+        <p class="mb-5">Uttam Nagar, Bavdhan, Pune, Maharashtra 411021</p>
+        <img src="./static/Puranics Abitante.jpg" alt="Location Map" class="h-20 object-contain" />
+      </div>
+    </div>
+  </div>
+
+  <!------ Navbar Model ----- -->
+  <div id="navbar-model" class="fixed inset-0 bg-black/50 z-50 flex items-center justify-center font-sans hidden">
+    <div class="[max-height:calc(100vh)] w-full h-full bg-white p-10 relative grid grid-cols-1 gap-10 overflow-y-auto">
+      <button onclick="handleToggleNavbarModel(true)"
+        class="absolute flex items-center justify-center w-10 h-10 top-2 right-2 bg-white rounded-full p-3 shadow-lg">
+        x
+      </button>
+      <div class="flex gap-5 justify-center">
+        <img src="./static/kolte-patil.png" class="h-16" alt="logo" />
+        <img src="./static/logo.png" class="h-16" alt="logo" />
+      </div>
+      <ul class="mb-40 text-center flex flex-col space-y-10 text-xl">
+        <li><a href="#">Overview</a></li>
+        <li><a href="#">Project Highlights</a></li>
+        <li><a href="#">Location Insights</a></li>
+        <li><a href="#">Amenities</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#"><i class="fa-solid fa-phone mr-4"></i>+91-79068 31859</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            brand: "'Poppins', sans-serif",
+          },
+          colors: {
+            brand: {
+              gray: "#F7F7F7",
+              dark: "#652d90",
+            },
+          },
+        },
+      },
+    };
+  </script>
+  <script>
+    let isNavbarOpen = false;
+    function handleToggleNavbar(forceClose = false) {
+      if (forceClose) {
+        isNavbarOpen = true;
+      }
+      if (isNavbarOpen) {
+        $("#navbar-items").addClass("hidden space-x-5");
+        $("#navbar-items").removeClass(
+          "flex pt-5 px-5 !items-start !justify-start !space-y-3"
+        );
+
+        isNavbarOpen = false;
+      } else {
+        $("#navbar-items").removeClass("hidden space-x-5");
+        $("#navbar-items").addClass(
+          "flex pt-5 px-5 !items-start !justify-start !space-y-3"
+        );
+        isNavbarOpen = true;
+      }
+    }
+  </script>
+
+  <script>
+    let isModelOpen = false;
+    function handleToggleModel(forceClose = false) {
+      if (forceClose) {
+        isModelOpen = true;
+      }
+      if (isModelOpen) {
+        $("#model").addClass("hidden");
+
+        isModelOpen = false;
+      } else {
+        $("#model").removeClass("hidden");
+
+        isModelOpen = true;
+      }
+    }
+  </script>
+
+  <script>
+    let isNavbarModelOpen = false;
+    function handleToggleNavbarModel(forceClose = false) {
+      if (forceClose) {
+        isNavbarModelOpen = true;
+      }
+      if (isNavbarModelOpen) {
+        $("#navbar-model").addClass("hidden");
+
+        isNavbarModelOpen = false;
+      } else {
+        $("#navbar-model").removeClass("hidden");
+
+        isNavbarModelOpen = true;
+      }
+    }
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        items: 1,
+        autoplay: true,
+        autoplayTimeout: 1000,
+        autoplayHoverPause: true,
+        dots: true,
+        dotsContainer: ".owl-dots",
+      });
+    });
+  </script>
+</body>
+
+</html>
