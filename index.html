@@ -142,22 +142,43 @@
       <hr class="w-20 mb-10 bg-black border-none h-0.5" />
 
       <div class="w-full md:w-8/12 mx-auto flex flex-col gap-5 divide-y-2 divide-black">
-        <div class="w-full grid grid-cols-2 font-bold text-xl divide-x-2 divide-black">
-          <span>Configuration</span>
-          <span class="text-center">Price</span>
+        <div class="w-full grid grid-cols-3 font-bold text-xl divide-x-2 divide-black">
+          <span class="text-center py-4 px-4">Configuration</span>
+          <span class="text-center py-4 px-4">Carpet Area</span>
+          <span class="text-center py-4 px-4">Price</span>
         </div>
-        <div class="w-full grid grid-cols-2 text-md pb-2 pt-5 divide-x-2 divide-black">
-          <span>2 BHK</span>
+        <div class="w-full grid grid-cols-3 text-md pb-2 pt-5 divide-x-2 divide-black">
+          <span class="text-center px-6 py-6">2 BHK</span>
+          <span class="text-center py-4 px-4">913.94 Sq. Ft.</span>
           <div class="flex items-center justify-center">
-            <button onclick="handleToggleModel()" class="bg-black text-white px-5 py-2 font-semibold animate-btn">
+            <button onclick="handleToggleModel()" class="ml-2 text-center bg-black text-white px-5 py-2 font-semibold animate-btn">
               Know More
             </button>
           </div>
         </div>
-        <div class="w-full grid grid-cols-2 text-md pb-2 pt-5 divide-x-2 divide-black">
-          <span>3 BHK</span>
+        <div class="w-full grid grid-cols-3 text-md pb-2 pt-5 divide-x-2 divide-black">
+          <span class="text-center px-6 py-6">3 BHK</span>
+          <span class="text-center py-4 px-4">1,158.05 Sq. Ft.</span>
           <div class="flex items-center justify-center">
-            <button onclick="handleToggleModel()" class="bg-black text-white px-5 py-2 font-semibold animate-btn">
+            <button onclick="handleToggleModel()" class="ml-2 text-center bg-black text-white px-5 py-2 font-semibold animate-btn">
+              Know More
+            </button>
+          </div>
+        </div>
+        <div class="w-full grid grid-cols-3 text-md pb-2 pt-5 divide-x-2 divide-black">
+          <span class="text-center px-6 py-6">3 BHK Imperial</span>
+          <span class="text-center py-4 px-4">1,285.21 Sq. Ft.</span>
+          <div class="flex items-center justify-center">
+            <button onclick="handleToggleModel()" class="ml-2 text-center bg-black text-white px-5 py-2 font-semibold animate-btn">
+              Know More
+            </button>
+          </div>
+        </div>
+        <div class="w-full grid grid-cols-3 text-md pb-2 pt-5 divide-x-2 divide-black">
+          <span class="text-center px-6 py-6">3 RLK</span>
+          <span class="text-center py-4 px-4">1,226.63 Sq. Ft</span>
+          <div class="flex items-center justify-center">
+            <button onclick="handleToggleModel()" class="ml-2 text-center bg-black text-white px-5 py-2 font-semibold animate-btn">
               Know More
             </button>
           </div>
@@ -510,7 +531,7 @@
         loop: true,
         items: 1,
         autoplay: true,
-        autoplayTimeout: 1000,
+        autoplayTimeout: 2000,
         autoplayHoverPause: true,
         dots: true,
         dotsContainer: ".owl-dots",
