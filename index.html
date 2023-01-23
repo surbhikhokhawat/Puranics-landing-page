@@ -12,7 +12,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -47,9 +49,9 @@
         class="text-black lg:flex flex-col lg:flex-row items-center justify-end space-x-5 text-md hidden">
         <a onclick="handleToggleNavbar(true)" href="#Overview">Overview</a>
         <a onclick="handleToggleNavbar(true)" href="#Project-Highlights">Project Highlights</a>
-        <a onclick="handleToggleNavbar(true)" href="#Location-Insights">Location Insights</a>
         <a onclick="handleToggleNavbar(true)" href="#Pricing">Pricing</a>
         <a onclick="handleToggleNavbar(true)" href="#amenities">Amenities</a>
+        <a onclick="handleToggleNavbar(true)" href="#location-insights">Location Insights</a>
         <button onclick="handleToggleNavbar(true); handleToggleModel();"
           class="bg-black text-white px-5 py-2 font-semibold animate-btn">
           Enquire Now
@@ -107,7 +109,6 @@
         <ul class="list-disc flex flex-col space-y-4">
           <li>Clusters within Puraniks Abitante have a definite edge over other projects for 5 major reasons, Close to
             nature, Ample open space, Upgraded specifications, Superior quality construction & Excellent location.</li>
-          <li>Crimson Anisha Global School</li>
           <li>A home in Puraniks Abitante gives you beautiful natural vistas & great natural ventilation & sunlight
             overlooking hills & Urban living on either side of the Project.</li>
         </ul>
@@ -115,38 +116,21 @@
     </div>
   </section>
 
-  <!-- Aros R 13 New Launch Section -->
-  <!-- <section class="bg-brand-dark text-white w-full py-10">
-    <div class="w-10/12 mx-auto flex flex-col items-center justify-center">
-      <h2 class="text-center text-2xl font-bold mb-2">
-        Aros R 13 New Launch
-      </h2>
-      <hr class="w-20 mb-10 bg-white border-none h-0.5" />
-
-      <p class="text-justify leading-7 mb-5">
-        The New launch Aros with a thoughtfully crafted combination of 2 & 3
-        BHK Flats aims at providing extra ordinary living with a world of
-        privileges in different ways be it mesmerizing nature’s nest, a 3
-        level club house or an extensive sky trail. Result is an Extra
-        Ordinary Living!
-      </p>
-    </div>
-  </section> -->
 
 
 
   <!-- Pricing Section -->
   <section id="Pricing" class="bg-brand-gray text-black w-full py-10">
-    <div class="w-10/12 mx-auto flex flex-col items-center justify-center">
+    <div class="w-11/12 md:w-8/12 mx-auto flex flex-col items-center justify-center">
       <h2 class="text-center text-2xl font-bold mb-2">Pricing</h2>
       <hr class="w-20 mb-10 bg-black border-none h-0.5" />
 
-      <div class="w-full md:w-8/12 mx-auto flex flex-col gap-5 divide-y-2 divide-black">
-        <div class="w-full grid grid-cols-2 font-bold text-xl divide-x-2 divide-black">
-          <span>Configuration</span>
-          <span class="text-center">Price</span>
+      <div class="w-full md:w-8/12 mx-auto flex flex-col divide-y-2 divide-black">
+        <div class="w-full grid grid-cols-2 font-bold text-lg md:text-xl divide-x-2 divide-black">
+          <span class="text-center pb-2">Configuration</span>
+          <span class="text-center pb-2">Price</span>
         </div>
-        <div class="w-full grid grid-cols-2 text-md pb-2 pt-5 divide-x-2 divide-black">
+        <div class="w-full grid grid-cols-2 text-md divide-x-2 divide-black">
           <span class="text-center px-4 py-4">2 BHK</span>
           <div class="flex items-center justify-center">
             <button onclick="handleToggleModel()" class="bg-brand-dark text-white px-5 py-2 font-semibold animate-btn">
@@ -154,7 +138,7 @@
             </button>
           </div>
         </div>
-        <div class="w-full grid grid-cols-2 text-md pb-2 pt-5 divide-x-2 divide-black">
+        <div class="w-full grid grid-cols-2 text-md divide-x-2 divide-black">
           <span class="text-center px-4 py-4">3 BHK</span>
           <div class="flex items-center justify-center">
             <button onclick="handleToggleModel()" class="bg-brand-dark text-white px-5 py-2 font-semibold animate-btn">
@@ -172,25 +156,18 @@
       <h2 class="text-center text-2xl font-bold mb-2">Amenities</h2>
       <hr class="w-20 mb-10 bg-white border-none h-0.5" />
 
-      <div class="w-full md:w-10/12 grid grid-cols-1 md:grid-cols-2 items-start gap-5 mb-5">
-        <ul class="list-disc flex flex-col space-y-4 mt-2">
+      <div class="w-full md:w-11/12 grid grid-cols-1 md:grid-cols-4 items-start gap-5 md:gap-36 mb-5">
+        <ul class="list-disc flex flex-col gap-5 h-full justify-evenly">
           <li>Club House</li>
           <li>Swimming Pool</li>
           <li>Senior Citizen Sitout</li>
           <li>Gymnasium</li>
           <li>Indoor Games</li>
           <li>Multipurpose Hall</li>
-          <li>Jogging Track</li>
-          <li>Pool Table</li>
-          <li>Cycling</li>
-          <li>Badminton</li>
-          <li>Children Play Area</li>
-          <li>Barbeque Pit</li>
         </ul>
 
-        <div>
-          <div>
-            <div class="owl-carousel">
+    
+            <div class="owl-carousel col-span-2">
               <img src="./static/amenities-1.png" alt="amenities" class="w-full" />
               <img src="./static/amenities-2.png" alt="amenities" class="w-full" />
               <img src="./static/amenities-3.png" alt="amenities" class="w-full" />
@@ -201,17 +178,24 @@
               <img src="./static/amenities-8.png" alt="amenities" class="w-full" />
               <img src="./static/amenities-9.png" alt="amenities" class="w-full" />
               <img src="./static/amenities-10.png" alt="amenities" class="w-full" />
-
             </div>
-            <div class="owl-dots flex items-center justify-center py-2"></div>
-          </div>
-        </div>
+  
+        <ul class="list-disc flex flex-col gap-5 h-full justify-evenly">
+          <li>Jogging Track</li>
+          <li>Pool Table</li>
+          <li>Cycling</li>
+          <li>Badminton</li>
+          <li>Children Play Area</li>
+          <li>Barbeque Pit</li>
+        </ul>
       </div>
+
+
     </div>
   </section>
 
   <!-- Address Section -->
-  <section class="bg-brand-gray text-black w-full py-10">
+  <section id="location-insights" class="bg-brand-gray text-black w-full py-10">
     <div class="w-10/12 mx-auto grid grid-cols-1 md:grid-cols-2 md:gap-10">
       <div class="flex flex-col items-center justify-center h-full text-center">
         <h2 class="text-center text-2xl font-bold mb-2">
@@ -232,7 +216,7 @@
       </div>
 
       <div>
-        <img src="./static/map.png" alt="Location Map" class="h-[30rem] object-contain" />
+        <img src="./static/amenities-10.png" alt="Location Map" class="h-[30rem] object-contain" />
       </div>
     </div>
   </section>
@@ -241,12 +225,12 @@
 
   <!-- Footer -->
   <footer class="w-full bg-brand-dark text-white font-sans">
-    <div class="w-11/12 mg:w-9/10 lg:w-10/12 mx-auto flex flex-col md:flex-row md:gap-20 gap-10 py-10">
+    <div class="w-11/12 md:w-10/12  mx-auto flex flex-col md:flex-row md:gap-20 gap-10 py-10">
       <div class="w-full md:w-5/12">
         <h5 class="mb-5 text-center font-bold text-lg">
           A STEP AHEAD. ASK TO OWN.
         </h5>
-        <form class="flex flex-col space-y-5 mb-5 bg-gray-200 text-black p-5 md:p-10 rounded-xl">
+        <form action="mailto:Nestorpropertiespune@gmail.com" method="post" onsubmit="reDirectToThankyou()" class="flex flex-col space-y-5 mb-5 bg-gray-200 text-black p-5 md:p-10 rounded-xl">
           <input placeholder="First Name" type="text" name="first_name"
             class="py-2 px-2 placeholder:text-black/50 placeholder:font-semibold font-semibold text-black" />
           <input placeholder="Phone" type="text" name="phone"
@@ -278,12 +262,12 @@
         </form>
       </div>
 
-      <div class="flex flex-col gap-5 text-center justify-center md:text-left w-full md:w-6/12 md:pl-20">
-        <div class="h-20 flex text-center justify-center items-center md:justify-start w-full">
+      <div class="flex flex-col gap-5 text-center justify-start md:text-left w-full md:w-6/12 text-sm leading-7 md:pt-12">
+        <div class="h-20 flex text-center justify-center items-center md:justify-start w-full ">
           <img src="./static/Puranics Abitante.jpg" class="h-20 bg-white p-2" alt="logo" />
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10">
-          <div>
+        <div class="flex flex-col md:flex-row gap-5 md:gap-10">
+          <div class="w-full md:w-7/12">
             <p class="mb-5">
               Puranik Builders Limited is a leading real estate company providing comprehensive residential
               and commercial solutions across various categories.
@@ -295,7 +279,7 @@
             <p class="font-bold">CALL US</p>
             <p class="mb-5">8055544000</p>
           </div>
-          <div>
+          <div class="w-full md:w-4/12">
             <p class="font-bold mb-3">QUICK LINKS</p>
             <ul class="flex flex-col space-y-2">
               <li class="before:content-['>'] before:pr-1">
@@ -354,7 +338,7 @@
       </button>
       <div>
         <h4 class="font-bold text-xl text-center mb-3">Get In Touch</h4>
-        <form class="flex flex-col space-y-5 text-black">
+        <form action="mailto:Nestorpropertiespune@gmail.com" method="post" onsubmit="reDirectToThankyou()" class="flex flex-col space-y-5 text-black">
           <input placeholder="First Name" type="text" name="first_name"
             class="py-2 px-2 placeholder:text-black/50 border rounded-lg placeholder:font-semibold font-semibold text-black" />
           <input placeholder="Phone" type="text" name="phone"
@@ -396,7 +380,8 @@
         <h4 class="font-bold text-xl text-left mb-3">Address</h4>
         <p class="font-bold">Puranics Abitante</p>
         <p class="mb-5">Uttam Nagar, Bavdhan, Pune, Maharashtra 411021</p>
-        <img src="./static/Puranics Abitante.jpg" alt="Location Map" class="h-20 object-contain" />
+        <img src="./static/Puranics Abitante.jpg" alt="Location Map" class="h-20 object-contain" /> <br>
+        <img src="./static/puranics-map.jpeg" alt="puranic-map" width="300" height="200">
       </div>
     </div>
   </div>
@@ -415,9 +400,9 @@
       <ul class="mb-40 text-center flex flex-col space-y-10 text-xl">
         <li><a href="#Overview">Overview</a></li>
         <li><a href="#Project-Highlights">Project Highlights</a></li>
-        <li><a href="#location-insights">Location Insights</a></li>
         <li><a href="#amenities">Amenities</a></li>
         <li><a href="#Pricing">Pricing</a></li>
+        <li><a href="#location-insights">Location Insights</a></li>
         <li><a href="#tel : +917906831859"><i class="fa-solid fa-phone mr-4"></i>+91-79068 31859</a></li>
       </ul>
     </div>
@@ -517,5 +502,12 @@
       });
     });
   </script>
+
+  <script>
+    function reDirectToThankyou(){
+      window.open("thankyou.html","_blank")
+    }
+  </script>
 </body>
+
 </html>
