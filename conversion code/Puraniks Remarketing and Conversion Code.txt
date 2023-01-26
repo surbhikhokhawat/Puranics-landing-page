@@ -1,0 +1,19 @@
+Copy the tag below and paste it in between the <head></head> tags of every page of your website. You only need to install the Google tag once per account, even if you are tracking multiple actions.
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11073821642"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11073821642');
+</script>
+
+Conversion code:
+Copy the snippet below and paste it in between the <head></head> tags of the page(s) that you'd like to track, right after the Google tag
+
+<!-- Event snippet for submit _lead form_26 jan conversion page -->
+<script>
+  gtag('event', 'conversion', {'send_to': 'AW-11073821642/S4NZCPjhuIkYEMq3tKAp'});
+</script>
