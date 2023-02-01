@@ -23,24 +23,26 @@
     integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="owl.carousel.min.css">
+  <link rel="stylesheet" href="owl.theme.default.min.css">
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-W8F6WL5KVT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-W8F6WL5KVT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-W8F6WL5KVT');
-</script>
- <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11073821642"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    gtag('config', 'G-W8F6WL5KVT');
+  </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11073821642"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'AW-11073821642');
-</script>
+    gtag('config', 'AW-11073821642');
+  </script>
 </head>
 
 <body class="font-brand scroll-smooth">
@@ -67,12 +69,13 @@
         class="text-black lg:flex flex-col lg:flex-row items-center justify-end space-x-5 text-md hidden">
         <a onclick="handleToggleNavbar(true)" href="#Overview">Overview</a>
         <a onclick="handleToggleNavbar(true)" href="#Project-Highlights">Project Highlights</a>
-        <a onclick="handleToggleNavbar(true)" href="#Pricing">Pricing</a>
         <a onclick="handleToggleNavbar(true)" href="#amenities">Amenities</a>
         <a onclick="handleToggleNavbar(true)" href="#location-insights">Location Insights</a>
+        <a onclick="handleToggleNavbar(true)" href="#floor-plan">Floor Plans</a>
+        <a onclick="handleToggleNavbar(true)" href="#Pricing">Pricing</a>
         <button onclick="handleToggleNavbar(true); handleToggleModel();"
           class="bg-black text-white px-5 py-2 font-semibold animate-btn">
-          Enquire Now
+          Download brochure
         </button>
       </nav>
     </div>
@@ -103,7 +106,7 @@
         Fiore.
       </p>
       <button onclick="handleToggleModel()" class="bg-black text-white px-4 py-2 font-semibold animate-btn">
-        Request For Brochure
+        Project Features
       </button>
     </div>
   </section>
@@ -133,49 +136,14 @@
       </div>
     </div>
   </section>
-
-
-
-
-  <!-- Pricing Section -->
-  <section id="Pricing" class="bg-brand-gray text-black w-full py-10">
-    <div class="w-11/12 md:w-8/12 mx-auto flex flex-col items-center justify-center">
-      <h2 class="text-center text-2xl font-bold mb-2">Pricing</h2>
-      <hr class="w-20 mb-10 bg-black border-none h-0.5" />
-
-      <div class="w-full md:w-8/12 mx-auto flex flex-col divide-y-2 divide-black">
-        <div class="w-full grid grid-cols-2 font-bold text-lg md:text-xl divide-x-2 divide-black">
-          <span class="text-center pb-2">Configuration</span>
-          <span class="text-center pb-2">Price</span>
-        </div>
-        <div class="w-full grid grid-cols-2 text-md divide-x-2 divide-black">
-          <span class="text-center px-4 py-4">2 BHK</span>
-          <div class="flex items-center justify-center">
-            <button onclick="handleToggleModel()" class="bg-brand-dark text-white px-5 py-2 font-semibold animate-btn">
-              Know More
-            </button>
-          </div>
-        </div>
-        <div class="w-full grid grid-cols-2 text-md divide-x-2 divide-black">
-          <span class="text-center px-4 py-4">3 BHK</span>
-          <div class="flex items-center justify-center">
-            <button onclick="handleToggleModel()" class="bg-brand-dark text-white px-5 py-2 font-semibold animate-btn">
-              Know More
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Amenities Section -->
-  <section class="bg-brand-dark text-white w-full py-10" id="amenities">
+  <section class="bg-brand-gray text-black w-full py-10" id="amenities">
     <div class="w-10/12 mx-auto flex flex-col items-center justify-center">
       <h2 class="text-center text-2xl font-bold mb-2">Amenities</h2>
-      <hr class="w-20 mb-10 bg-white border-none h-0.5" />
+      <hr class="w-20 mb-10 bg-black border-none h-0.5" />
 
       <div class="w-full md:w-11/12 grid grid-cols-1 md:grid-cols-4 items-start gap-5 md:gap-36 mb-5">
-        <ul class="list-disc flex flex-col gap-5 h-full justify-evenly"> 
+        <ul class="list-disc flex flex-col gap-5 h-full justify-evenly">
           <li>Senior Citizen Sitout</li>
           <li>Multipurpose Hall</li>
           <li>Children Play Area</li>
@@ -185,20 +153,20 @@
           <li>Hopscotch Area</li>
         </ul>
 
-    
-            <div class="owl-carousel col-span-2">
-              <img src="./static/amenities-1.png" alt="amenities" class="w-full" />
-              <img src="./static/amenities-2.png" alt="amenities" class="w-full" />
-              <img src="./static/amenities-3.png" alt="amenities" class="w-full" />
-              <img src="./static/amenities-4.png" alt="amenities" class="w-full" />
-              <img src="./static/amenities-5.png" alt="amenities" class="w-full" />
-              <img src="./static/amenities-6.png" alt="amenities" class="w-full" />
-              <img src="./static/amenities-7.png" alt="amenities" class="w-full" />
-              <img src="./static/amenities-8.png" alt="amenities" class="w-full" />
-              <img src="./static/amenities-9.png" alt="amenities" class="w-full" />
-              <img src="./static/amenities-10.png" alt="amenities" class="w-full" />
-            </div>
-  
+
+        <div class="owl-carousel col-span-2">
+          <img src="./static/amenities-1.png" alt="amenities" class="w-full" />
+          <img src="./static/amenities-2.png" alt="amenities" class="w-full" />
+          <img src="./static/amenities-3.png" alt="amenities" class="w-full" />
+          <img src="./static/amenities-4.png" alt="amenities" class="w-full" />
+          <img src="./static/amenities-5.png" alt="amenities" class="w-full" />
+          <img src="./static/amenities-6.png" alt="amenities" class="w-full" />
+          <img src="./static/amenities-7.png" alt="amenities" class="w-full" />
+          <img src="./static/amenities-8.png" alt="amenities" class="w-full" />
+          <img src="./static/amenities-9.png" alt="amenities" class="w-full" />
+          <img src="./static/amenities-10.png" alt="amenities" class="w-full" />
+        </div>
+
         <ul class="list-disc flex flex-col gap-5 h-full justify-evenly">
           <li>Jogging Track</li>
           <li>Pool Table</li>
@@ -214,13 +182,13 @@
   </section>
 
   <!-- Address Section -->
-  <section id="location-insights" class="bg-brand-gray text-black w-full py-10">
+  <section id="location-insights" class="bg-brand-dark text-white w-full py-10">
     <div class="w-10/12 mx-auto grid grid-cols-1 md:grid-cols-2 md:gap-10">
       <div class="flex flex-col items-center justify-center h-full text-center">
         <h2 class="text-center text-2xl font-bold mb-2">
           Location Highlights
         </h2>
-        <hr class="w-20 mb-10 bg-black border-none h-0.5" />
+        <hr class="w-20 mb-10 bg-white border-none h-0.5" />
 
         <ul class="list-disc text-left flex flex-col space-y-10 mt-4">
           <li>Well Connected to Pune Mumbai Expressway</li>
@@ -239,6 +207,39 @@
       </div>
     </div>
   </section>
+
+  <!-- Pricing Section -->
+  <section id="Pricing" class="bg-brand-gray text-black w-full py-10">
+    <div class="w-11/12 md:w-8/12 mx-auto flex flex-col items-center justify-center">
+      <h2 class="text-center text-2xl font-bold mb-2">Pricing</h2>
+      <hr class="w-20 mb-10 bg-black border-none h-0.5" />
+
+      <div class="w-full md:w-8/12 mx-auto flex flex-col divide-y-2 divide-black">
+        <div class="w-full grid grid-cols-2 font-bold text-lg md:text-xl divide-x-2 divide-black">
+          <span class="text-center pb-2">Configuration</span>
+          <span class="text-center pb-2">Price</span>
+        </div>
+        <div class="w-full grid grid-cols-2 text-md divide-x-2 divide-black">
+          <span class="text-center px-4 py-4">2 BHK</span>
+          <div class="flex items-center justify-center">
+            <button onclick="handleToggleModel()" class="bg-brand-dark text-white px-5 py-2 font-semibold animate-btn">
+              Price Breakup
+            </button>
+          </div>
+        </div>
+        <div class="w-full grid grid-cols-2 text-md divide-x-2 divide-black">
+          <span class="text-center px-4 py-4">3 BHK</span>
+          <div class="flex items-center justify-center">
+            <button onclick="handleToggleModel()" class="bg-brand-dark text-white px-5 py-2 font-semibold animate-btn">
+              Price Breakup
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
 
 
 
@@ -278,7 +279,8 @@
             <label for="agree_to_contact">I agreed to be contacted on Whatsapp</label>
           </div>
 
-          <button type="submit" onclick="reDirectToThankyou()" class="bg-brand-dark text-white px-5 py-2 font-semibold animate-btn">
+          <button type="submit" onclick="reDirectToThankyou()"
+            class="bg-brand-dark text-white px-5 py-2 font-semibold animate-btn">
             Submit
           </button>
         </form>
@@ -300,7 +302,7 @@
             <p class="font-bold">CONTACT US</p>
             <p class="mb-5">
               Uttam Nagar, Bavdhan, Pune,
-              Maharashtra 411021             </p>
+              Maharashtra 411021 </p>
             <p class="font-bold">REACH US</p>
             <div class="flex flex-col gap-3">
               <a href="https://wa.me/+918055544000" target="blank" class="flex gap-3 items-center justify-start"><i
@@ -338,17 +340,24 @@
 
 
   <!-- ----- button-fixed----  -->
-  <div class="h-20 items-stretch flex flex-row sticky bottom-0 left-0 right-0 bg-brand-dark text-lg md:hidden">
+  <div class="h-20 items-stretch flex flex-row sticky bottom-0 left-0 right-0 bg-brand-dark text-lg">
     <button
-      class="w-full flex items-center gap-3 justify-center text-center flex-col p-4 text-sm bg-brand-dark text-gray-300 lg:hidden focus:outline-none focus:ring-2 focus:ring-gray-200"
+      class="w-full flex items-center gap-3 justify-center text-center flex-col p-4 text-sm bg-brand-dark text-gray-300  focus:outline-none focus:ring-2 focus:ring-gray-200"
       onclick="handleToggleModel()">
-      <i class="fa fa-th-large"></i>
+      <i class="fa fa-2x fa-th-large"></i>
       <span>Enquire Now</span>
     </button>
     <div class="h-full w-3 bg-white"></div>
-    <a href="tel:+91-79068 31859"
-      class="gap-3 w-full flex items-center justify-center text-center flex-col p-4 text-sm bg-brand-dark text-gray-300 lg:hidden focus:outline-none focus:ring-2 focus:ring-gray-200">
-      <i class="fa-solid fa-phone"></i>
+    <button
+    class="w-full flex items-center gap-3 justify-center text-center flex-col p-4 text-sm bg-brand-dark text-gray-300  focus:outline-none focus:ring-2 focus:ring-gray-200"
+    onclick="handleToggleModel()">
+    <i class="fa-brands fa-2x fa-whatsapp"></i>
+    <span>Whatsapp</span>
+  </button>
+    <div class="h-full w-3 bg-white"></div>
+    <a href="tel:+91-83296 32692"
+      class="gap-3 w-full flex items-center justify-center text-center flex-col p-4 text-sm bg-brand-dark text-gray-300  focus:outline-none focus:ring-2 focus:ring-gray-200">
+      <i class="fa-2x fa-solid fa-phone"></i>
       <span>Call Now</span>
     </a>
   </div>
@@ -530,8 +539,8 @@
   </script>
 
   <script>
-    function reDirectToThankyou(){
-      window.open("thankyou.html","_blank")
+    function reDirectToThankyou() {
+      window.open("thankyou.html", "_blank")
     }
   </script>
 </body>
