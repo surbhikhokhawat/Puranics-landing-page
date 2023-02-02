@@ -23,8 +23,6 @@
     integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-  <link rel="stylesheet" href="owl.carousel.min.css">
-  <link rel="stylesheet" href="owl.theme.default.min.css">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-W8F6WL5KVT"></script>
   <script>
@@ -74,6 +72,7 @@
         <a onclick="handleToggleNavbar(true)" href="#Pricing">Pricing</a>
         <button onclick="handleToggleNavbar(true); handleToggleModel();"
           class="bg-black text-white px-5 py-2 font-semibold animate-btn">
+          <i class="fa fa-download animate-bounce mr-2" aria-hidden="true"></i>
           Download brochure
         </button>
       </nav>
@@ -82,7 +81,7 @@
 
   <!-- Banner Image -->
   <section>
-    <div class="owl-carousel">
+    <div class="owl-carousel banner">
       <img src="./static/banner-1.jpeg" alt="home banner" class="w-full" />
       <img src="./static/banner-2.jpeg" alt="home banner" class="w-full" />
       <img src="./static/banner-3.jpeg" alt="home banner" class="w-full" />
@@ -153,7 +152,7 @@
         </ul>
 
 
-        <div class="owl-carousel col-span-2">
+        <div class="owl-carousel banner col-span-2">
           <img src="./static/amenities-1.png" alt="amenities" class="w-full" />
           <img src="./static/amenities-2.png" alt="amenities" class="w-full" />
           <img src="./static/amenities-3.png" alt="amenities" class="w-full" />
@@ -238,9 +237,46 @@
     </div>
   </section>
 
+  <!-- -------------- Floor plan --------------  -->
 
+  <section class="bg-brand-gray text-black w-full py-10">
+    <div class="w-11/12 md:w-8/12 mx-auto flex flex-col items-center justify-center">
+      <h2 class="text-center text-2xl font-bold mb-2">Floor Plans</h2>
+      <hr class="w-20 mb-10 bg-black border-none h-0.5" />
+    </div>
 
-
+    <div class="owl-carousel floor-plan" id="Floor-Plan">
+      <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('/static/floor-plan-1.jpeg');" 
+      class="text-white  h-44 bg-center bg-no-repeat bg-contain w-full flex flex-col items-center justify-center gap-2">
+        <span style="font-size: large; font-weight: 400;">2 BHK</span> <br>
+         <button onclick="handleToggleModel()" class="bg-brand-dark text-white px-5 py-2 font-semibold animate-btn">
+              Price Breakup
+            </button>
+      </div>
+      <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('/static/floor-plan-2.jpeg');" 
+      class="text-white  h-44 bg-center bg-no-repeat bg-contain w-full flex flex-col items-center justify-center gap-2">
+        <span style="font-size: large; font-weight: 400;">3 BHK</span> <br>
+         <button onclick="handleToggleModel()" class="bg-brand-dark text-white px-5 py-2 font-semibold animate-btn">
+              Price Breakup
+            </button>
+      </div>
+      <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('/static/floor-plan-3.jpeg');" 
+      class="text-white  h-44 bg-center bg-no-repeat bg-contain w-full flex flex-col items-center justify-center gap-2">
+        <span style="font-size: large; font-weight: 400;">2 BHK</span> <br>
+         <button onclick="handleToggleModel()" class="bg-brand-dark text-white px-5 py-2 font-semibold animate-btn">
+              Price Breakup
+            </button>
+      </div>
+      <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('/static/floor-plan-4.jpeg');" 
+      class="text-white  h-44 bg-center bg-no-repeat bg-contain w-full flex flex-col items-center justify-center gap-2">
+        <span style="font-size: large; font-weight: 400;">3 BHK</span> <br>
+         <button onclick="handleToggleModel()" class="bg-brand-dark text-white px-5 py-2 font-semibold animate-btn">
+              Price Breakup
+            </button>
+      </div>
+    </div>
+    <div class="owl-dots flex items-center justify-center py-2"></div>
+  </section>
 
 
 
@@ -341,21 +377,21 @@
   <!-- ----- button-fixed----  -->
   <div class="h-20 items-stretch flex flex-row sticky bottom-0 left-0 right-0 bg-brand-dark text-lg">
     <button
-      class="w-full flex items-center gap-3 justify-center text-center flex-col p-4 text-sm bg-brand-dark text-gray-300  focus:outline-none focus:ring-2 focus:ring-gray-200"
+      class="w-full flex items-center gap-3 justify-center text-center flex-col p-4 text-sm bg-brand-darker text-gray-300  focus:outline-none focus:ring-2 focus:ring-gray-200"
       onclick="handleToggleModel()">
       <i class="fa fa-2x fa-th-large"></i>
       <span>Enquire Now</span>
     </button>
     <div class="h-full w-3 bg-white"></div>
     <button
-    class="w-full flex items-center gap-3 justify-center text-center flex-col p-4 text-sm bg-brand-dark text-gray-300  focus:outline-none focus:ring-2 focus:ring-gray-200"
-    onclick="handleToggleModel()">
-    <i class="fa-brands fa-2x fa-whatsapp"></i>
-    <span>Whatsapp</span>
-  </button>
+      class="w-full flex items-center gap-3 justify-center text-center flex-col p-4 text-sm bg-brand-darker text-gray-300  focus:outline-none focus:ring-2 focus:ring-gray-200"
+      onclick="handleToggleModel()">
+      <i class="fa-brands fa-2x fa-whatsapp"></i>
+      <span>Whatsapp</span>
+    </button>
     <div class="h-full w-3 bg-white"></div>
     <a href="tel:+91-83296 32692"
-      class="gap-3 w-full flex items-center justify-center text-center flex-col p-4 text-sm bg-brand-dark text-gray-300  focus:outline-none focus:ring-2 focus:ring-gray-200">
+      class="gap-3 w-full flex items-center justify-center text-center flex-col p-4 text-sm bg-brand-darker text-gray-300  focus:outline-none focus:ring-2 focus:ring-gray-200">
       <i class="fa-2x fa-solid fa-phone"></i>
       <span>Call Now</span>
     </a>
@@ -427,8 +463,7 @@
         x
       </button>
       <div class="flex gap-5 justify-center">
-        <img src="./static/kolte-patil.png" class="h-16" alt="logo" />
-        <img src="./static/logo.png" class="h-16" alt="logo" />
+        <img src="/static/Puranics Abitante.jpg" alt="">
       </div>
       <ul class="mb-40 text-center flex flex-col space-y-10 text-xl">
         <li><a href="#Overview">Overview</a></li>
@@ -458,6 +493,7 @@
             brand: {
               gray: "#F7F7F7",
               dark: "#652d90",
+              darker:"#000000",
             },
           },
         },
@@ -524,14 +560,33 @@
   </script>
   <script>
     $(document).ready(function () {
-      $(".owl-carousel").owlCarousel({
+      $(".owl-carousel.banner").owlCarousel({
         loop: true,
         items: 1,
         autoplay: true,
         autoplayTimeout: 2000,
         autoplayHoverPause: true,
         dots: false,
-        dotsContainer: ".owl-dots",
+      });
+    });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $(".owl-carousel.floor-plan").owlCarousel({
+        loop: true,
+        items: 4,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        dots: false,
+        margin:20,
+        autoHeight:true,
+        responsive:{
+          0:{items:1},
+          480:{items:2},
+          768:{items:4}
+        }
       });
     });
   </script>
