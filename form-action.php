@@ -9,8 +9,7 @@ $configuration= $_POST["configuration"];
 $site_visit_availablity= $_POST["site_visit_availablity"];
 $agree_to_contact= $_POST["agree_to_contact"];
 // Subject
-$subject='New Form Submisstion';
-
+$subject='New Form Submission';
 // Message
 $message = '
 <html>
@@ -50,13 +49,7 @@ $headers[] = 'Content-type: text/html; charset=iso-8859-1';
 // Mail it
  if(@mail($to, $subject, $message, implode("\r\n", $headers))){
  
-/*"<script>alert('Your mail has been sent successfuly! Thank you!!')</script>";
- "<meta http-equiv='refresh' content='0; url=https://aros-liferepublic-marunji.in/'>";
-}
-else{
-    "<script>alert('failed! please try again')</script>";
-    "<meta http-equiv='refresh' content='0; url=https://aros-liferepublic-marunji.in/'>";}*/
-    /*echo "<script>alert(' Registration Send Successfully...')</script>";*/
+
     echo "<script>window.location='thankyou.html';</script>";
 }
 
